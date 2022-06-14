@@ -1404,6 +1404,7 @@ GameObject:
   - component: {fileID: 1720501352}
   - component: {fileID: 1720501351}
   - component: {fileID: 1720501350}
+  - component: {fileID: 1720501353}
   m_Layer: 0
   m_Name: InstatiateNewBall
   m_TagString: Untagged
@@ -1516,6 +1517,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1720501353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720501348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9e7e2b5f2226f4590debebfd2a1115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PULifeTime: 7
 --- !u!1 &1793311913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1689,7 @@ GameObject:
   - component: {fileID: 1833822230}
   - component: {fileID: 1833822229}
   - component: {fileID: 1833822231}
+  - component: {fileID: 1833822232}
   m_Layer: 0
   m_Name: SpeedUp
   m_TagString: Untagged
@@ -1788,6 +1803,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8828125, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1833822232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833822227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9e7e2b5f2226f4590debebfd2a1115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PULifeTime: 7
 --- !u!1 &1920630940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1894,7 @@ GameObject:
   - component: {fileID: 2102574301}
   - component: {fileID: 2102574300}
   - component: {fileID: 2102574302}
+  - component: {fileID: 2102574303}
   m_Layer: 0
   m_Name: SpeedDown
   m_TagString: Untagged
@@ -1979,6 +2008,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8828125, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2102574303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102574298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9e7e2b5f2226f4590debebfd2a1115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PULifeTime: 7
 --- !u!1 &2146136851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,7 +2069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnArea: {fileID: 334633588}
-  maxPowerUpAmount: 5
+  maxPowerUpAmount: 15
   powerUpAreaMin: {x: -7, y: -4}
   powerUpAreaMax: {x: 7, y: 4}
   powerUpTemplateList:

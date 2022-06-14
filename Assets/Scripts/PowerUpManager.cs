@@ -21,6 +21,7 @@ public class PowerUpManager : MonoBehaviour
     {
         powerUpList = new List<GameObject>();
         timer = 0;
+
     }
 
     private void Update()
