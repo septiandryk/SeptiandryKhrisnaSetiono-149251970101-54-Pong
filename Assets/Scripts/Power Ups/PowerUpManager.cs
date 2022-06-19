@@ -9,6 +9,9 @@ public class PowerUpManager : MonoBehaviour
     public Vector2 powerUpAreaMin;
     public Vector2 powerUpAreaMax;
 
+    public GameObject paddleKanan;
+    public GameObject paddleKiri;
+
     public List<GameObject> powerUpTemplateList;
 
     private List<GameObject> powerUpList;
@@ -16,6 +19,15 @@ public class PowerUpManager : MonoBehaviour
     public int spawnInterval;
 
     private float timer;
+
+    public PaddleController paddleController;
+    public BallController ballController;
+    public PUPaddleIncreaseSizeController pUPaddleSizeIncrease;
+
+    public float duration;
+    public bool paddleKananExpand;
+
+
 
     private void Start()
     {
@@ -33,6 +45,7 @@ public class PowerUpManager : MonoBehaviour
             GenerateRandomPowerUp();
             timer -= spawnInterval;
         }
+
     }
 
     public void GenerateRandomPowerUp()
@@ -76,4 +89,9 @@ public class PowerUpManager : MonoBehaviour
             RemovePowerUp(powerUpList[0]);
         }
     }
+
+
+
 }
+
+

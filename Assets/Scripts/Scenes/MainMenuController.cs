@@ -5,17 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    
-    public void PlayGame() 
-    { 
-        SceneManager.LoadScene("Tutorial"); 
-    } 
 
-    public void OpenAuthor() 
-    { 
-        Debug.Log("Created By Septiandry Khrisna Setiono - 149251970101-54"); 
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
-    
+
+    public void OpenAuthor()
+    {
+        Debug.Log("Created By Septiandry Khrisna Setiono - 149251970101-54");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
@@ -25,12 +30,12 @@ public class MainMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
